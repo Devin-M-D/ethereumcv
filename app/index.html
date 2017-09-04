@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Devin Downer Ethereum CV</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+  <style>
+    .left { text-align: left; }
+    .center { text-align: center; }
+    .right { text-align: right; }
+    .startHidden { display: none; }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="row center">
+        <div class="col-lg-12">
+          <h1>Devin Downer Ethereum CV</h1>
+          <br>
+          <!-- <input type="button" onclick="App.testSend()" value="testSend">
+          <br>
+          <span id="addresses"></span>
+          <br> -->
+          <span>Hi <span id="userAccount"></span>! You have <span id="userBalance"></span> ether :)</span>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="col-lg-6">
+          <div class="row"><h2>Projects</h2></div>
+          <div class="row startHidden" id="addPersonalProject">
+            <h3>Add a new personal project</h3>
+            <div class="col-lg-6 left">
+              Name: <input id="newPersonalProjectName" type="text">
+              <br>
+              Description: <input id="newPersonalProjectDesc" type="text">
+              <br>
+              <br>
+              <input type="button" onclick="App.addPersonalProject()" value="Add">
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8 left" id="spnProjects"></div>
+              <div class="col-lg-2"></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row"><h2>Experience</h2></div>
+          <div class="row startHidden" id="addProfessionalExperience">
+            <h3>Add a new professional experience</h3>
+            <div class="col-lg-6 left">
+              Company: <input id="newProfessionalExperienceCompany" type="text">
+              <br>
+              Title: <input id="newProfessionalExperienceTitle" type="text">
+              <br>
+              Technologies: <input id="newProfessionalExperienceTech" type="text">
+              <br>
+              Start Date: <input id="newProfessionalExperienceSDate" type="text">
+              <br>
+              End Date: <input id="newProfessionalExperienceEDate" type="text">
+              <br>
+              <br>
+              <input type="button" onclick="App.addProfessionalExperience()" value="Add">
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8 left" id="spnExperience"></div>
+              <div class="col-lg-2"></div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="row center">
+        <div class="col-lg-12">
+          <div class="row">
+            <h2>New Project Ideas</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 left"></div>
+            <div class="col-lg-8 center">
+              <span style="width:50px;position:relative;display:inline-block;">Name: </span><input id="projectIdeaName" type="text">
+              <br>
+              <span style="width:50px;position:relative;display:inline-block;">Desc: </span><input id="projectIdeaDesc" type="text">
+              <br><br>
+              <input type="button" value="Submit new project idea" onclick="App.submitIdea()">
+            </div>
+            <div class="col-lg-2 left"></div>
+          </div>
+          <div class="row" style="margin-top:50px;">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8" id="projectIdeas"></div>
+              <div class="col-lg-2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
